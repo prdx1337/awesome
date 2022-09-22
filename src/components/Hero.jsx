@@ -9,7 +9,7 @@ const style = {
   container: `max-w-screen-lg mx-auto py-12`,
   wrapper: `flex flex-wrap gap-4 h-[600px] relative`,
   flexOne: `md:basis-[45%] basis-full flex justify-center items-center relative`,
-  txthero: `z-10 text-gray-black dark:text-white`,
+  txthero: `px-4 z-10 text-gray-black dark:text-white`,
   motion: `font-black text-6xl md:text-8xl cursor-pointer txtshadow tracking-tight leading-none`,
   paragraph: `text-base mt-4 dark:text-[#64FFDA]`,
   flexTwo: `md:basis-[45%] basis-full hidden md:block mx-auto`,
@@ -20,7 +20,7 @@ function Hero() {
     words: [
       `Web Developer`,
       "Guy-who-loves-React.js",
-      "ButLovesCyberSecurityToo",
+      "Gamer",
     ],
     loop: true,
     delaySpeed: 2000,
