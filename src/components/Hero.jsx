@@ -22,18 +22,17 @@ function Hero() {
     delaySpeed: 2000,
   });
 
-
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
         <div className={style.flexOne}>
           <motion.div
             initial={{
-              x: -200,
+              x: -100,
               opacity: 0,
-              scale: 0.5,
+              scale: 0.8,
             }}
-            whileInView={{
+            animate={{
               x: 0,
               opacity: 1,
               scale: 1,
@@ -54,11 +53,11 @@ function Hero() {
         </div>
         <motion.div
           initial={{
-            x: 200,
+            x: 100,
             opacity: 0,
-            scale: 0.5,
+            scale: 0.8,
           }}
-          whileInView={{
+          animate={{
             x: 0,
             opacity: 1,
             scale: 1,
