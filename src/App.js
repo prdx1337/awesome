@@ -1,10 +1,4 @@
 import React, { useState, useEffect, Suspense } from "react";
-// import Header from "./components/Header";
-// import Hero from "./components/Hero";
-// import Projects from "./components/Projects";
-// import Technologies from "./components/Technologies";
-// import Contact from "./components/Contact";
-// import Services from "./components/Services";
 import { motion } from "framer-motion";
 import "./App.css";
 
@@ -28,14 +22,6 @@ const Services = React.lazy(() =>
 );
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 6000);
-  }, []);
-
-  // for dark theme
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -75,8 +61,6 @@ function App() {
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
 
-  // dark theme
-
   return (
     <Suspense
       fallback={
@@ -85,29 +69,19 @@ function App() {
         </div>
       }
     >
-      <>
-        {loading ? (
-          <div className="h-screen flex justify-center items-center animate-pulse text-base">
-            Loading ...
-          </div>
-        ) : (
-          <>
-            <motion.div
-              className="cursor"
-              variants={variants}
-              animate={cursorVariant}
-            />
-            <div className="App bg-white dark:bg-[#111111] relative">
-              <Header />
-              <Hero />
-              <Technologies />
-              <Services textEnter={textEnter} textLeave={textLeave} />
-              <Projects />
-              <Contact />
-            </div>
-          </>
-        )}
-      </>
+      <motion.div
+        className="cursor"
+        variants={variants}
+        animate={cursorVariant}
+      />
+      <div className="App bg-white dark:bg-[#111111] relative">
+        <Header />
+        <Hero />
+        <Technologies />
+        <Services textEnter={textEnter} textLeave={textLeave} />
+        <Projects />
+        <Contact />
+      </div>
     </Suspense>
   );
 }
