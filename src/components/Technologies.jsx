@@ -107,8 +107,7 @@ function Technologies() {
                 className={style.tech}
                 key={key}
                 initial={{ opacity: 0, x: key % 2 === 0 ? -50 : 50, y: -50 }}
-                animate={{ opacity: 1, x: 0, y: 0 }}
-                whileInView="visible"
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
                   duration: 0.3,

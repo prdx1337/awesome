@@ -9,7 +9,7 @@ const style = {
   container: `max-w-screen-lg mx-auto py-12`,
   wrapper: `flex flex-wrap gap-4 h-[600px] relative`,
   flexOne: `md:basis-[45%] basis-full flex justify-center items-center relative`,
-  txthero: `z-10 text-gray-black dark:text-white`,
+  txthero: `px-4 z-10 text-gray-black dark:text-white`,
   motion: `font-black text-6xl md:text-8xl cursor-pointer txtshadow tracking-tight leading-none`,
   paragraph: `text-base mt-4 dark:text-[#64FFDA]`,
   flexTwo: `md:basis-[45%] basis-full hidden md:block mx-auto`,
@@ -17,11 +17,7 @@ const style = {
 
 function Hero() {
   const [text] = useTypewriter({
-    words: [
-      `Web Developer`,
-      "Guy-who-loves-React.js",
-      "ButLovesCyberSecurityToo",
-    ],
+    words: [`Web Developer`, "Guy-who-loves-React.js", "Gamer"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -30,30 +26,29 @@ function Hero() {
     <div className={style.container}>
       <div className={style.wrapper}>
         <div className={style.flexOne}>
-          <div className={style.txthero}>
-            <motion.h1
-              initial={{
-                x: -200,
-                opacity: 0,
-                scale: 0.5,
-              }}
-              animate={{
-                x: 0,
-                opacity: 1,
-                scale: 1,
-              }}
-              transition={{
-                duration: 1.5,
-              }}
-              className={style.motion}
-            >
-              Luther Sedanto
-            </motion.h1>
+          <motion.div
+            initial={{
+              x: -200,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5,
+            }}
+            viewport={{ once: true }}
+            className={style.txthero}
+          >
+            <h1 className={style.motion}>Luther Sedanto</h1>
             <p className={style.paragraph}>
               <span>{text}</span>
               <Cursor cursorColor="#4B5563" />
             </p>
-          </div>
+          </motion.div>
           <BackgroundSVG />
         </div>
         <motion.div
@@ -62,7 +57,7 @@ function Hero() {
             opacity: 0,
             scale: 0.5,
           }}
-          animate={{
+          whileInView={{
             x: 0,
             opacity: 1,
             scale: 1,
@@ -70,6 +65,7 @@ function Hero() {
           transition={{
             duration: 1.5,
           }}
+          viewport={{ once: true }}
           className={style.flexTwo}
         >
           <Spline scene="https://prod.spline.design/I02DuoS6NB58TCc0/scene.splinecode" />
