@@ -19,7 +19,7 @@ const style = {
   overflow: `flex flex-row text-white gap-2 items-center overflow-x-auto w-[230px] py-4 scrollbar cursor-grabbing mx-auto`,
   image: `object-fit w-full h-3/5 object-center rounded-t-lg`,
   content: `dark:text-white text-gray-700 w-4/5 mx-auto`,
-  paragraph: `text-justify md:text-base text-sm whitespace-normal md:h-32 h-25 overflow-auto scrollbar md:px-6 px-4 dark:text-white/80`,
+  paragraph: `text-justify md:text-base text-sm whitespace-normal md:h-36 h-16 overflow-y-auto scrollbar cursor-grabbing px-2 dark:text-white/80`,
   span: `dark:text-[#64FFDA] text-red-500`,
   liveandgithub: `flex justify-between py-4`,
   button: `cursor-pointer inline-flex items-center py-2 px-4 md:text-sm text-xs font-medium text-center bg-[#0A1929] text-white hover:text-[#64FFDA] rounded-2xl hover:scale-105 hover:rounded-none duration-200 ease-in-out`,
