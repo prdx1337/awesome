@@ -9,7 +9,10 @@ import {
   SiExpress,
   SiFigma,
   SiWebflow,
-  SiNextdotjs,
+  SiRedux,
+  SiVisualstudiocode,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si";
 import {
   DiNodejs,
@@ -26,11 +29,19 @@ const style = {
   container: `max-w-screen-lg mx-auto py-12`,
   h1: `dark:text-white md:text-4xl text-2xl font-bold text-gray-900 text-center`,
   border: `rounded-lg border dark:border-[#4B5563] py-4 mt-4`,
-  column: `grid grid-cols-3 md:grid-cols-5 mx-8 my-4 place-items-center gap-4`,
+  column: `grid grid-cols-4 md:grid-cols-6 mx-8 my-4 place-items-center gap-4`,
   tech: `logo group relative flex items-center justify-center`,
 };
 
 const logos = [
+  <>
+    <span className={style.spantxt}>HTML</span>
+    <SiHtml5 className={style.logo} alt="HTML" />
+  </>,
+  <>
+    <span className={style.spantxt}>CSS</span>
+    <SiCss3 className={style.logo} alt="CSS" />
+  </>,
   <>
     <span className={style.spantxt}>JAVASCRIPT</span>
     <SiJavascript className={style.logo} alt="Javascript" />
@@ -60,8 +71,8 @@ const logos = [
     <DiNodejs className={style.logo} alt="Nodejs" />
   </>,
   <>
-    <span className={style.spantxt}>NEXTJS</span>
-    <SiNextdotjs className={style.logo} alt="Nextjs" />
+    <span className={style.spantxt}>REDUX</span>
+    <SiRedux className={style.logo} alt="Redux" />
   </>,
   <>
     <span className={style.spantxt}>GITHUB</span>
@@ -80,7 +91,7 @@ const logos = [
     <DiBootstrap className={style.logo} alt="Bootstrap" />
   </>,
   <>
-    <span className={style.spantxt}>FRAMERMOTION</span>
+    <span className={style.spantxt}>FRAMER_MOTION</span>
     <SiFramer className={style.logo} alt="FramerMotion" />
   </>,
   <>
@@ -90,6 +101,10 @@ const logos = [
   <>
     <span className={style.spantxt}>WEBFLOW</span>
     <SiWebflow className={style.logo} alt="Webflow" />
+  </>,
+  <>
+    <span className={style.spantxt}>VS_CODE</span>
+    <SiVisualstudiocode className={style.logo} alt="Visual Studio Code" />
   </>,
 ];
 
@@ -110,8 +125,8 @@ function Technologies() {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 0.3,
-                  delay: key * 0.5,
+                  duration: 0.1,
+                  delay: key * 0.3,
                 }}
               >
                 {logo}
