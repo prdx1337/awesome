@@ -30,7 +30,7 @@ function Hero() {
             <motion.h1
               initial={{
                 y: 200,
-                skewX: 10,
+                skewX: 20,
               }}
               animate={{
                 y: 0,
@@ -46,13 +46,15 @@ function Hero() {
             </motion.h1>
             <motion.p
               initial={{
-                opacity: 0,
+                y: 200,
+                skewX: 20,
               }}
               animate={{
-                opacity: 1,
+                y: 0,
+                skewX: 0,
               }}
               transition={{
-                duration: 1.3,
+                duration: 1.2,
               }}
               viewport={{ once: true }}
               className={style.paragraph}
