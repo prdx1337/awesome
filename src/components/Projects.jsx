@@ -34,7 +34,7 @@ function FadeInWhenVisible({ children }) {
         opacity: 0,
       }}
       transition={{
-        duration: 1,
+        duration: 0.5,
       }}
       whileInView={{
         opacity: 1,
