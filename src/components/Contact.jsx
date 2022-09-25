@@ -23,7 +23,7 @@ function Contact() {
           </h1>
           <p className="md:text-base text-sm">Feel free to message me.</p>
           <div
-            onClick={() => window.open("", "_blank")}
+            onClick={() => window.open("https://drive.google.com/file/d/1Y3mTmlLWv0utdP7lqHOZZjGy2PIKmRP-/view?usp=sharing", "_blank")}
             className={style.button}
           >
             Resume
