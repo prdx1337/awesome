@@ -42,7 +42,7 @@ function Contact() {
         />
         <FaGithub
           className={style.icon}
-          onClick={() => window.open("https://github.com/muhay007", "_blank")}
+          onClick={() => window.open("https://github.com/lthrsdnto", "_blank")}
         />{" "}
         | <p className="md:text-sm text-xs">Made by 👽 Luther Sedanto</p>
       </div>
