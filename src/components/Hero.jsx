@@ -17,7 +17,7 @@ const style = {
 
 function Hero() {
   const [text] = useTypewriter({
-    words: [`Web Developer`, "Guy-who-loves-React.js", "Gamer"],
+    words: [`web dev`, "mobile dev", "gamer"],
     loop: true,
     delaySpeed: 2000,
   });
