@@ -23,7 +23,7 @@ function Contact() {
           </h1>
           <p className="md:text-base text-sm">Feel free to message me.</p>
           <div
-            onClick={() => window.open("https://drive.google.com/file/d/1Y3mTmlLWv0utdP7lqHOZZjGy2PIKmRP-/view?usp=sharing", "_blank")}
+            onClick={() => window.open("https://drive.google.com/file/d/1W1fB-tj71GL_gLOSqHe2QxIfVOGym-8h/view?usp=sharing", "_blank")}
             className={style.button}
           >
             Resume
@@ -42,7 +42,7 @@ function Contact() {
         />
         <FaGithub
           className={style.icon}
-          onClick={() => window.open("https://github.com/lthrsdnto", "_blank")}
+          onClick={() => window.open("https://github.com/prdx1337", "_blank")}
         />{" "}
         | <p className="md:text-sm text-xs">Made by 👽 Luther Sedanto</p>
       </div>
